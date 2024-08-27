@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
 
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.ziyad.switchproject.HomeFragment"
+        android:label="HomeFragment" />
+    <fragment
+        android:id="@+id/firstSwitchFragment"
+        android:name="com.ziyad.switchproject.FirstSwitchFragment"
+        android:label="fragment_first_switch"
+        tools:layout="@layout/fragment_first_switch" />
+    <fragment
+        android:id="@+id/secondSwitchFragment"
+        android:name="com.ziyad.switchproject.SecondSwitchFragment"
+        android:label="fragment_second_switch"
+        tools:layout="@layout/fragment_second_switch" />
+    <fragment
+        android:id="@+id/thirdSwitchFragment"
+        android:name="com.ziyad.switchproject.ThirdSwitchFragment"
+        android:label="fragment_third_switch"
+        tools:layout="@layout/fragment_third_switch" />
+    <fragment
+        android:id="@+id/fourthSwitchFragment"
+        android:name="com.ziyad.switchproject.FourthSwitchFragment"
+        android:label="fragment_fourth_switch"
+        tools:layout="@layout/fragment_fourth_switch" />
+    <fragment
+        android:id="@+id/fifthSwitchFragment"
+        android:name="com.ziyad.switchproject.FifthSwitchFragment"
+        android:label="fragment_fifth_switch"
+        tools:layout="@layout/fragment_fifth_switch" />
 </navigation>
