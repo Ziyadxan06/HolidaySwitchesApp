@@ -1,14 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".HomeFragment">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        tools:context=".HomeFragment"
+        android:background="#53D358">
 
-</FrameLayout>
+        <TextView
+            android:id="@+id/HomeFragmentTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Beaituful Switches"
+            android:textColor="#E91E63"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Switch
+            android:id="@+id/firstSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="150dp"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:text="SW1"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <Switch
+            android:id="@+id/secondSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="10dp"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:text="SW2"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/thirdSwitch"
+            app:layout_constraintStart_toEndOf="@+id/firstSwitch"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UseSwitchCompatOrMaterialXml"/>
+
+        <Switch
+            android:id="@+id/thirdSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="28dp"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:text="SW3"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UseSwitchCompatOrMaterialXml"/>
+
+        <Switch
+            android:id="@+id/fourthSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:text="SW4"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/fifthSwitch"
+            app:layout_constraintHorizontal_bias="0.429"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/secondSwitch"
+            tools:ignore="UseSwitchCompatOrMaterialXml"/>
+
+        <Switch
+            android:id="@+id/fifthSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="80dp"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:text="SW5"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/secondSwitch"
+            tools:ignore="UseSwitchCompatOrMaterialXml"/>
+
+        <Switch
+            android:id="@+id/egoSwitch"
+            android:layout_width="83dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="50dp"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:text="Ego"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fifthSwitch"
+            tools:ignore="UseSwitchCompatOrMaterialXml"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
