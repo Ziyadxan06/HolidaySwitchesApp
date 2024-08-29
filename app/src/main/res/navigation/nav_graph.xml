@@ -10,28 +10,28 @@
         android:name="com.ziyad.switchproject.HomeFragment"
         android:label="HomeFragment" />
     <fragment
-        android:id="@+id/firstSwitchFragment"
-        android:name="com.ziyad.switchproject.FirstSwitchFragment"
+        android:id="@+id/givingFragment"
+        android:name="com.ziyad.switchproject.GivingFragment"
         android:label="fragment_first_switch"
-        tools:layout="@layout/fragment_first_switch" />
+        tools:layout="@layout/fragment_giving" />
     <fragment
-        android:id="@+id/secondSwitchFragment"
-        android:name="com.ziyad.switchproject.SecondSwitchFragment"
+        android:id="@+id/respectFragment"
+        android:name="com.ziyad.switchproject.RespectFragment"
         android:label="fragment_second_switch"
-        tools:layout="@layout/fragment_second_switch" />
+        tools:layout="@layout/fragment_respect" />
     <fragment
-        android:id="@+id/thirdSwitchFragment"
-        android:name="com.ziyad.switchproject.ThirdSwitchFragment"
+        android:id="@+id/happinessFragment"
+        android:name="com.ziyad.switchproject.HappinessFragment"
         android:label="fragment_third_switch"
-        tools:layout="@layout/fragment_third_switch" />
+        tools:layout="@layout/fragment_happiness" />
     <fragment
-        android:id="@+id/fourthSwitchFragment"
-        android:name="com.ziyad.switchproject.FourthSwitchFragment"
+        android:id="@+id/kindnessFragment"
+        android:name="com.ziyad.switchproject.KindnessFragment"
         android:label="fragment_fourth_switch"
-        tools:layout="@layout/fragment_fourth_switch" />
+        tools:layout="@layout/fragment_kindness" />
     <fragment
-        android:id="@+id/fifthSwitchFragment"
-        android:name="com.ziyad.switchproject.FifthSwitchFragment"
+        android:id="@+id/optimismFragment"
+        android:name="com.ziyad.switchproject.OptimismFragment"
         android:label="fragment_fifth_switch"
-        tools:layout="@layout/fragment_fifth_switch" />
+        tools:layout="@layout/fragment_optimism" />
 </navigation>
