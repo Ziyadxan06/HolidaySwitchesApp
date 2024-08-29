@@ -1,118 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
+        <variable
+            name="handler"
+            type="com.ziyad.switchproject.EventHandler" />
     </data>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".HomeFragment"
-        android:background="#53D358">
+        android:orientation="vertical"
+        android:background="#FF9800">
 
         <TextView
             android:id="@+id/HomeFragmentTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="52dp"
             android:fontFamily="sans-serif-black"
             android:text="Beaituful Switches"
             android:textColor="#E91E63"
             android:textSize="34sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_gravity="center"/>
 
-        <Switch
-            android:id="@+id/firstSwitch"
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/givingSwitchCompat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:switchPadding="10dp"
+            android:onClick="@{(view) -> handler.onClickSwitch(view)}"
             android:scaleX="1.5"
             android:scaleY="1.5"
-            android:text="SW1"
+            android:text="Giving"
             android:textSize="14sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="UseSwitchCompatOrMaterialXml" />
+            android:fontFamily="sans-serif-black"
+             />
 
-        <Switch
-            android:id="@+id/secondSwitch"
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/respectSwitchCompat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="150dp"
-            android:layout_marginEnd="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:switchPadding="10dp"
+            android:onClick="@{(view) -> handler.onClickSwitch(view)}"
             android:scaleX="1.5"
             android:scaleY="1.5"
-            android:text="SW2"
+            android:text="Respect"
             android:textSize="14sp"
-            app:layout_constraintEnd_toStartOf="@+id/thirdSwitch"
-            app:layout_constraintStart_toEndOf="@+id/firstSwitch"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="UseSwitchCompatOrMaterialXml"/>
+            android:fontFamily="sans-serif-black"
+            />
 
-        <Switch
-            android:id="@+id/thirdSwitch"
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/happinessSwitchCompat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="150dp"
-            android:layout_marginEnd="28dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:switchPadding="10dp"
+            android:onClick="@{(view) -> handler.onClickSwitch(view)}"
             android:scaleX="1.5"
             android:scaleY="1.5"
-            android:text="SW3"
+            android:text="Happiness"
             android:textSize="14sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="UseSwitchCompatOrMaterialXml"/>
+            android:fontFamily="sans-serif-black"/>
 
-        <Switch
-            android:id="@+id/fourthSwitch"
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/kindessSwitchCompat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:switchPadding="10dp"
+            android:onClick="@{(view) -> handler.onClickSwitch(view)}"
             android:scaleX="1.5"
             android:scaleY="1.5"
-            android:text="SW4"
+            android:text="Kindness"
             android:textSize="14sp"
-            app:layout_constraintEnd_toStartOf="@+id/fifthSwitch"
-            app:layout_constraintHorizontal_bias="0.429"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/secondSwitch"
-            tools:ignore="UseSwitchCompatOrMaterialXml"/>
+            android:fontFamily="sans-serif-black"/>
 
-        <Switch
-            android:id="@+id/fifthSwitch"
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/optimismSwitchCompat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:layout_marginEnd="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:switchPadding="10dp"
+            android:onClick="@{(view) -> handler.onClickSwitch(view)}"
             android:scaleX="1.5"
             android:scaleY="1.5"
-            android:text="SW5"
+            android:text="Optimism"
             android:textSize="14sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/secondSwitch"
-            tools:ignore="UseSwitchCompatOrMaterialXml"/>
+            android:fontFamily="sans-serif-black"
+            />
 
-        <Switch
+        <com.google.android.material.switchmaterial.SwitchMaterial
             android:id="@+id/egoSwitch"
             android:layout_width="83dp"
             android:layout_height="22dp"
-            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:onClick="@{() -> handler.OnClickEgo()}"
             android:scaleX="1.5"
             android:scaleY="1.5"
             android:text="Ego"
             android:textSize="14sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/fifthSwitch"
-            tools:ignore="UseSwitchCompatOrMaterialXml"/>
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            android:fontFamily="sans-serif-black"
+            style="@style/Widget.Material3.CompoundButton.Switch"/>
+    </LinearLayout>
 </layout>

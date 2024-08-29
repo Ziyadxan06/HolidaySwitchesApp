@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".KindnessFragment"
-    android:background="#673AB7">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="I'm Fourth. Navigate from Below :)"
-        android:textSize="40sp"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:textColor="@color/white"/>
+    <data>
+        <variable
+            name="message"
+            type="com.ziyad.switchproject.DestinationMessages" />
+    </data>
 
-</FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".KindnessFragment"
+        android:background="#673AB7">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{message.kindnessFragmentMsg}"
+            android:textSize="40sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white" />
+
+    </FrameLayout>
+</layout>
