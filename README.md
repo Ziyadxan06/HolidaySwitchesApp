@@ -16,9 +16,9 @@
 </h2>
 
 <p align="center">
-  <img align="center" src="https://github.com/Ziyadxan06/SwitchProject/blob/master/ScreenShots/HomeScreenSS.jpeg" width="250px" height="530px">
-  <img align="center" src="https://github.com/Ziyadxan06/SwitchProject/blob/master/ScreenShots/HomeScreenSS2.jpeg"  width="250px" height="530px">
-  <img align="center" src="https://github.com/Ziyadxan06/SwitchProject/blob/master/ScreenShots/HomeScreenSS3.jpeg"  width="250px" height="530px">
+  <img align="center" src="https://github.com/Ziyadxan06/SwitchesApp/blob/master/ScreenShots/homescreenSS.jpeg" width="250px" height="530px">
+  <img align="center" src="https://github.com/Ziyadxan06/SwitchesApp/blob/master/ScreenShots/homescreenSS2.jpeg"  width="250px" height="530px">
+  <img align="center" src="https://github.com/Ziyadxan06/SwitchesApp/blob/master/ScreenShots/homescrennSS3.jpeg"  width="250px" height="530px">
 </p> 
 <br>
 <h4 aling="left">
