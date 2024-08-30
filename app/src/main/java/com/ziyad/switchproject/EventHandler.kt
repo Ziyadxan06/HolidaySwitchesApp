@@ -36,6 +36,7 @@ class EventHandler(val view : View, val bottomNav : BottomNavigationView) : Life
         if(activeSwitches.isEmpty()){
             SwEgo.isChecked = true
             disableAndCloseOtherSwitches()
+            bottomNav.visibility = View.GONE
         }
     }
 
