@@ -27,7 +27,10 @@
   - The "Ego" switch is initially checked, when "Ego" switch is checked the other switches become disabled and unchecked. <br>
   - When the "Ego" switch is unchecked, the other switches become enabled. <br>
   - When other switches are checked, a corresponding destination is added to the bottom navigation bar.<br>
-  - When other switches are unchecked, a corresponding destination is removed from the bottom navigation bar
+  - When other switches are unchecked, a corresponding destination is removed from the bottom navigation bar <br>
+  - When four switches are checked, the fifth switch will not add a new destination to the bottom navigation bar when it is checked. <br>
+  - If all five switches are checked and then a switch with a corresponding destination in bottom navigation bar is unchecked, the bottom navigation bar will automatically add the appropriate     
+    destination for the last checked switch that did not have a corresponding destination.
 </h4> <br/>
 
 <h2 align="center">
