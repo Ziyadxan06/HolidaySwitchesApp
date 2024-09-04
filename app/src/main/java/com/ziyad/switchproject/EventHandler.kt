@@ -2,6 +2,7 @@ package com.ziyad.switchproject
 
 import android.view.Menu
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.widget.SwitchCompat
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleEventObserver
@@ -23,18 +24,18 @@ class EventHandler(val view : View, val bottomNav : BottomNavigationView) : Life
         }
     }
 
-    var SwEgo: SwitchCompat = view.findViewById(R.id.egoSwitch)
-    var SwGiving: SwitchCompat = view.findViewById(R.id.givingSwitchCompat)
-    var SwRespect: SwitchCompat = view.findViewById(R.id.respectSwitchCompat)
-    var SwHappiness: SwitchCompat = view.findViewById(R.id.happinessSwitchCompat)
-    var SwKindness: SwitchCompat = view.findViewById(R.id.kindessSwitchCompat)
-    var SwOptimism: SwitchCompat = view.findViewById(R.id.optimismSwitchCompat)
-    var switches: List<SwitchCompat> = listOf(SwGiving, SwRespect, SwHappiness, SwKindness,SwOptimism)
+    var SwWork: SwitchCompat = view.findViewById(R.id.workSwitch)
+    var SwSacrifice: SwitchCompat = view.findViewById(R.id.eidaladhaSwitchCompat)
+    var SwChristmas: SwitchCompat = view.findViewById(R.id.christmasSwitchCompat)
+    var SwNovruz: SwitchCompat = view.findViewById(R.id.novruzSwitchCompat)
+    var SwRamadan: SwitchCompat = view.findViewById(R.id.ramadanSwitchCompat)
+    var SwHaloween: SwitchCompat = view.findViewById(R.id.haloweenSwitchCompat)
+    var switches: List<SwitchCompat> = listOf( SwSacrifice, SwChristmas, SwNovruz, SwRamadan, SwHaloween)
 
 
     fun makeEgoChecked(){
         if(activeSwitches.isEmpty()){
-            SwEgo.isChecked = true
+            SwWork.isChecked = true
             disableAndCloseOtherSwitches()
             bottomNav.visibility = View.GONE
         }
@@ -49,7 +50,7 @@ class EventHandler(val view : View, val bottomNav : BottomNavigationView) : Life
     }
 
     fun OnClickEgo() {
-        if (SwEgo.isChecked) {
+        if (SwWork.isChecked) {
             disableAndCloseOtherSwitches()
             bottomNav.visibility = View.GONE
         } else {
@@ -59,7 +60,7 @@ class EventHandler(val view : View, val bottomNav : BottomNavigationView) : Life
 
         switches.forEach { switch ->
             switch.setOnCheckedChangeListener { buttonView, isChecked ->
-                if (isChecked && SwEgo.isChecked) {
+                if (isChecked && SwWork.isChecked) {
                     switch.isChecked = false
                 }
             }
@@ -98,55 +99,55 @@ class EventHandler(val view : View, val bottomNav : BottomNavigationView) : Life
 
     fun addDestinationToBottomNav(activeSwitches: MutableList<Int>) {
         when (activeSwitches.last()) {
-            R.id.givingSwitchCompat -> bottomNav.menu.add(
+            R.id.eidaladhaSwitchCompat -> bottomNav.menu.add(
                 Menu.NONE,
                 R.id.givingFragment,
                 Menu.NONE,
-                "Giving"
+                "Eid al-Adha"
             )
-                .setIcon(R.drawable.ic_giving)
+                .setIcon(R.drawable.ic_sacrifice)
 
-            R.id.respectSwitchCompat -> bottomNav.menu.add(
+            R.id.christmasSwitchCompat -> bottomNav.menu.add(
                 Menu.NONE,
                 R.id.respectFragment,
                 Menu.NONE,
-                "Respect"
+                "Christmas"
             )
-                .setIcon(R.drawable.ic_respect)
+                .setIcon(R.drawable.ic_xmas)
 
-            R.id.happinessSwitchCompat -> bottomNav.menu.add(
+            R.id.novruzSwitchCompat -> bottomNav.menu.add(
                 Menu.NONE,
                 R.id.happinessFragment,
                 Menu.NONE,
-                "Hapiness"
+                "Novruz"
             )
-                .setIcon(R.drawable.ic_happiness)
+                .setIcon(R.drawable.ic_novruz)
 
-            R.id.kindessSwitchCompat -> bottomNav.menu.add(
+            R.id.ramadanSwitchCompat -> bottomNav.menu.add(
                 Menu.NONE,
                 R.id.kindnessFragment,
                 Menu.NONE,
-                "Kindness"
+                "Ramadan"
             )
-                .setIcon(R.drawable.ic_kindness)
+                .setIcon(R.drawable.ic_ramadan)
 
-            R.id.optimismSwitchCompat -> bottomNav.menu.add(
+            R.id.haloweenSwitchCompat -> bottomNav.menu.add(
                 Menu.NONE,
                 R.id.optimismFragment,
                 Menu.NONE,
-                "Optimism"
+                "Haloween"
             )
-                .setIcon(R.drawable.ic_optimism)
+                .setIcon(R.drawable.ic_haloween)
         }
     }
 
     fun removeDestinationFromBottomNav(view: View) {
         when (view.id) {
-            R.id.givingSwitchCompat -> bottomNav.menu.removeItem(R.id.givingFragment)
-            R.id.respectSwitchCompat -> bottomNav.menu.removeItem(R.id.respectFragment)
-            R.id.happinessSwitchCompat -> bottomNav.menu.removeItem(R.id.happinessFragment)
-            R.id.kindessSwitchCompat -> bottomNav.menu.removeItem(R.id.kindnessFragment)
-            R.id.optimismSwitchCompat -> bottomNav.menu.removeItem(R.id.optimismFragment)
+            R.id.eidaladhaSwitchCompat -> bottomNav.menu.removeItem(R.id.givingFragment)
+            R.id.christmasSwitchCompat -> bottomNav.menu.removeItem(R.id.respectFragment)
+            R.id.novruzSwitchCompat -> bottomNav.menu.removeItem(R.id.happinessFragment)
+            R.id.ramadanSwitchCompat -> bottomNav.menu.removeItem(R.id.kindnessFragment)
+            R.id.haloweenSwitchCompat -> bottomNav.menu.removeItem(R.id.optimismFragment)
         }
     }
 
@@ -165,6 +166,7 @@ class EventHandler(val view : View, val bottomNav : BottomNavigationView) : Life
             if(switch.isChecked && !activeSwitches.contains(switch.id) && activeSwitches.size < 4){
                 activeSwitches.add(switch.id)
                 addDestinationToBottomNav(activeSwitches)
+                Toast.makeText(view.context, "Coressponding switch item added to bottom nav", Toast.LENGTH_SHORT).show()
             }
         }
     }
