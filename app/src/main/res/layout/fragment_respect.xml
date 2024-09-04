@@ -1,26 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".RespectFragment"
+    android:orientation="vertical"
+    android:background="#E91E63"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <data>
-        <variable
-            name="message"
-            type="com.ziyad.switchproject.DestinationMessages" />
-    </data>
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".RespectFragment"
-        android:background="#E91E63">
+    <TextView
+        android:id="@+id/christsmasFragmentMsg"
+        android:layout_width="455dp"
+        android:layout_height="308dp"
+        android:gravity="bottom"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="30sp" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:text="@{message.respectFragmentMsg}"
-            android:textSize="30sp"
-            android:textColor="@color/white" />
-
-    </FrameLayout>
-</layout>
+</LinearLayout>

@@ -29,90 +29,102 @@
             android:layout_gravity="center"/>
 
         <androidx.appcompat.widget.SwitchCompat
-            android:id="@+id/givingSwitchCompat"
+            android:id="@+id/eidaladhaSwitchCompat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             app:switchPadding="10dp"
+            android:thumb="@drawable/thumb_layout"
+            app:track="@drawable/track_layout"
             android:onClick="@{(view) -> handler.onClickSwitch(view)}"
             android:scaleX="1.5"
             android:scaleY="1.5"
-            android:text="Giving"
+            android:text="Eid al-Adha"
             android:textSize="14sp"
             android:fontFamily="sans-serif-black"
              />
 
         <androidx.appcompat.widget.SwitchCompat
-            android:id="@+id/respectSwitchCompat"
+            android:id="@+id/christmasSwitchCompat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             app:switchPadding="10dp"
+            android:thumb="@drawable/thumb_layout"
+            app:track="@drawable/track_layout"
             android:onClick="@{(view) -> handler.onClickSwitch(view)}"
             android:scaleX="1.5"
             android:scaleY="1.5"
-            android:text="Respect"
+            android:text="Christimas"
             android:textSize="14sp"
             android:fontFamily="sans-serif-black"
             />
 
         <androidx.appcompat.widget.SwitchCompat
-            android:id="@+id/happinessSwitchCompat"
+            android:id="@+id/novruzSwitchCompat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             app:switchPadding="10dp"
+            android:thumb="@drawable/thumb_layout"
+            app:track="@drawable/track_layout"
             android:onClick="@{(view) -> handler.onClickSwitch(view)}"
             android:scaleX="1.5"
             android:scaleY="1.5"
-            android:text="Happiness"
+            android:text="Novruz"
             android:textSize="14sp"
             android:fontFamily="sans-serif-black"/>
 
         <androidx.appcompat.widget.SwitchCompat
-            android:id="@+id/kindessSwitchCompat"
+            android:id="@+id/ramadanSwitchCompat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             app:switchPadding="10dp"
+            android:thumb="@drawable/thumb_layout"
+            app:track="@drawable/track_layout"
             android:onClick="@{(view) -> handler.onClickSwitch(view)}"
             android:scaleX="1.5"
             android:scaleY="1.5"
-            android:text="Kindness"
+            android:text="Ramadan"
             android:textSize="14sp"
             android:fontFamily="sans-serif-black"/>
 
         <androidx.appcompat.widget.SwitchCompat
-            android:id="@+id/optimismSwitchCompat"
+            android:id="@+id/haloweenSwitchCompat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             app:switchPadding="10dp"
+            android:thumb="@drawable/thumb_layout"
+            app:track="@drawable/track_layout"
             android:onClick="@{(view) -> handler.onClickSwitch(view)}"
             android:scaleX="1.5"
             android:scaleY="1.5"
-            android:text="Optimism"
+            android:text="Haloween"
             android:textSize="14sp"
             android:fontFamily="sans-serif-black"
             />
 
-        <com.google.android.material.switchmaterial.SwitchMaterial
-            android:id="@+id/egoSwitch"
-            android:layout_width="83dp"
-            android:layout_height="22dp"
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/workSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
+            app:switchPadding="10dp"
+            android:thumb="@drawable/thumb_layout"
+            app:track="@drawable/track_layout"
             android:onClick="@{() -> handler.OnClickEgo()}"
             android:scaleX="1.5"
             android:scaleY="1.5"
-            android:text="Ego"
+            android:text="Work"
             android:textSize="14sp"
-            android:fontFamily="sans-serif-black"
-            style="@style/Widget.Material3.CompoundButton.Switch"/>
+            android:fontFamily="sans-serif-black"/>
     </LinearLayout>
 </layout>
