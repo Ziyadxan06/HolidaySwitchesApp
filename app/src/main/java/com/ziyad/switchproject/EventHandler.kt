@@ -166,7 +166,7 @@ class EventHandler(val view : View, val bottomNav : BottomNavigationView) : Life
             if(switch.isChecked && !activeSwitches.contains(switch.id) && activeSwitches.size < 4){
                 activeSwitches.add(switch.id)
                 addDestinationToBottomNav(activeSwitches)
-                Toast.makeText(view.context, "Coressponding switch item added to bottom nav", Toast.LENGTH_SHORT).show()
+                Toast.makeText(view.context, "${switch.text} switch item added to bottom nav", Toast.LENGTH_SHORT).show()
             }
         }
     }
