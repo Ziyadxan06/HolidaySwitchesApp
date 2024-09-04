@@ -13,7 +13,7 @@ class OptimismFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return super.onCreateView(inflater, container, savedInstanceState)
+        return inflater.inflate(R.layout.fragment_optimism, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

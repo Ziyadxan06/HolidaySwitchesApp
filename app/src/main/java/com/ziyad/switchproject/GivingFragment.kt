@@ -14,7 +14,7 @@ class GivingFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
 
-        return super.onCreateView(inflater, container, savedInstanceState)
+        return inflater.inflate(R.layout.fragment_giving, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
