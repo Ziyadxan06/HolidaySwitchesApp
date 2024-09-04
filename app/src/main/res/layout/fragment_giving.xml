@@ -1,20 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<FrameLayout
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".GivingFragment"
-    android:background="#F44336"
+    android:orientation="vertical"
+    android:background="#A09B9B"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="309dp"
+        android:src="@drawable/gif_sacrifice"
+        android:layout_marginBottom="10dp"/>
+
     <TextView
+        android:id="@+id/sacrificeFragmentText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=""
-        android:textSize="40sp"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:textColor="@color/white" />
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black"
+        android:background="@color/white"
+        android:textColor="@color/black" />
 
-</FrameLayout>
+</LinearLayout>

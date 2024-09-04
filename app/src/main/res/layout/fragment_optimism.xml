@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<FrameLayout android:layout_width="match_parent"
+<LinearLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".OptimismFragment"
-    android:background="#3F51B5"
+    android:orientation="vertical"
+    android:background="#240907"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gif_haloween"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
     <TextView
+        android:id="@+id/haloweenFragmentText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=""
-        android:textSize="40sp"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:textColor="@color/white" />
+        android:textSize="20sp"
+        android:background="#AB3D02"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#701A01" />
 
-</FrameLayout>
+</LinearLayout>

@@ -14,26 +14,25 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".HomeFragment"
-        android:orientation="vertical"
-        android:background="#FF9800">
+        android:orientation="vertical">
 
         <TextView
-            android:id="@+id/HomeFragmentTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="52dp"
-            android:fontFamily="sans-serif-black"
-            android:text="Beautiful Switches"
-            android:textColor="#E91E63"
-            android:textSize="34sp"
-            android:layout_gravity="center"/>
+            android:text="Holidey Switches"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:textSize="30sp"
+            android:textColor="#E1E1E1"
+            android:fontFamily="sans-serif-black"/>
+
 
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/eidaladhaSwitchCompat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="50dp"
             app:switchPadding="10dp"
             android:thumb="@drawable/thumb_layout"
             app:track="@drawable/track_layout"
@@ -63,7 +62,7 @@
             />
 
         <androidx.appcompat.widget.SwitchCompat
-            android:id="@+id/novruzSwitchCompat"
+            android:id="@+id/haloweenSwitchCompat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -74,9 +73,10 @@
             android:onClick="@{(view) -> handler.onClickSwitch(view)}"
             android:scaleX="1.5"
             android:scaleY="1.5"
-            android:text="Novruz"
+            android:text="Haloween"
             android:textSize="14sp"
-            android:fontFamily="sans-serif-black"/>
+            android:fontFamily="sans-serif-black"
+            />
 
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/ramadanSwitchCompat"
@@ -94,8 +94,10 @@
             android:textSize="14sp"
             android:fontFamily="sans-serif-black"/>
 
+
+
         <androidx.appcompat.widget.SwitchCompat
-            android:id="@+id/haloweenSwitchCompat"
+            android:id="@+id/novruzSwitchCompat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -106,10 +108,9 @@
             android:onClick="@{(view) -> handler.onClickSwitch(view)}"
             android:scaleX="1.5"
             android:scaleY="1.5"
-            android:text="Haloween"
+            android:text="Novruz"
             android:textSize="14sp"
-            android:fontFamily="sans-serif-black"
-            />
+            android:fontFamily="sans-serif-black"/>
 
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/workSwitch"

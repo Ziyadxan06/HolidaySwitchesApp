@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".RespectFragment"
     android:orientation="vertical"
-    android:background="#E91E63"
+    android:background="#121C3C"
     xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="316dp"
+        android:src="@drawable/gif_christimas" />
 
 
     <TextView
         android:id="@+id/christmasFragmentText"
-        android:layout_width="455dp"
-        android:layout_height="308dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:gravity="bottom"
-        android:text=""
         android:textColor="@color/white"
-        android:textSize="30sp" />
+        android:background="#495BC4"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-smallcaps"/>
 
 </LinearLayout>

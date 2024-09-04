@@ -1,5 +1,6 @@
 package com.ziyad.switchproject
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -17,6 +18,7 @@ class KindnessFragment : Fragment() {
     @Inject
     lateinit var destinationTextAnimations: DestinationTextAnimations
 
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -25,10 +27,10 @@ class KindnessFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_kindness, container, false)
     }
 
+    @SuppressLint("ResourceAsColor")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         destinationTextAnimations.animateRamadanText(view, destinationTextProvider.ramadanText)
-
     }
 }

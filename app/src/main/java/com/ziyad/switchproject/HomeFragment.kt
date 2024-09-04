@@ -32,7 +32,6 @@ class HomeFragment : Fragment() {
         eventHandler = EventHandler(view, bottomNav)
         binding.handler = eventHandler
         lifecycle.addObserver(eventHandler)
-        //binding.egoSwitch.isChecked = true
     }
 
     override fun onDestroyView() {
