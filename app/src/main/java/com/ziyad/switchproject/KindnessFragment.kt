@@ -5,8 +5,17 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
+@AndroidEntryPoint
 class KindnessFragment : Fragment() {
+
+    @Inject
+    lateinit var destinationTextProvider: DestinationTextProvider
+
+    @Inject
+    lateinit var destinationTextAnimations: DestinationTextAnimations
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -18,5 +27,8 @@ class KindnessFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        destinationTextAnimations.animateRamadanText(view, destinationTextProvider.ramadanText)
+
     }
 }
