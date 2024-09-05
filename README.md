@@ -52,4 +52,15 @@
 <h4 align="left">
   Navigation Behavior: <br><br>
   - Clicking on a destination in the bottom navigation bar will navigate to one of the destinations displayed at the top, based on the currently selected switch.
+</h4><br>
+
+<h2 align="center">
+  Tests
+</h2>
+
+<h4>
+  This project includes unit tests to ensure the functionality and reliability of the app. The unit tests are written using JUnit and Mockito. <br><br>
+  
+  - JUnit: Version 4.13.2
+  - Mockito: Version 4.0.0
 </h4>
