@@ -8,7 +8,9 @@
 
 <h3 align="left">
   - DataBinding <br>
-  - Navigation Component(NavGraph, BottomNav)
+  - Navigation Component(NavGraph, BottomNav)<br>
+  - Dependency Injection(Hilt)<br>
+  - GIF Drawable Support: Utilizes a GIF drawable library for animated GIFs 
 </h3><br>
 
 <h2 align="center">
@@ -18,7 +20,7 @@
 <p align="center">
   <img align="center" src="https://github.com/Ziyadxan06/SwitchesApp/blob/master/ScreenShots/homescreenSS.jpeg" width="250px" height="530px">
   <img align="center" src="https://github.com/Ziyadxan06/SwitchesApp/blob/master/ScreenShots/homescreenSS2.jpeg"  width="250px" height="530px">
-  <img align="center" src="https://github.com/Ziyadxan06/SwitchesApp/blob/master/ScreenShots/homescrennSS3.jpeg"  width="250px" height="530px">
+  <img align="center" src="https://github.com/Ziyadxan06/SwitchesApp/blob/master/ScreenShots/homescreenSS3.jpeg"  width="250px" height="530px">
 </p> 
 <br>
 <h4 aling="left">
@@ -38,11 +40,11 @@
 </h2>
 
 <p align="center">
-  <img align="center" src="https://github.com/Ziyadxan06/SwitchProject/blob/master/ScreenShots/givingFRagmentSS.jpeg" width="250px" height="530px">
-  <img align="center" src="https://github.com/Ziyadxan06/SwitchProject/blob/master/ScreenShots/ResppectFragmentSS.jpeg"  width="250px" height="530px">
-  <img align="center" src="https://github.com/Ziyadxan06/SwitchProject/blob/master/ScreenShots/happinessfragmentSS.jpeg"  width="250px" height="530px">
-  <img align="center" src="https://github.com/Ziyadxan06/SwitchProject/blob/master/ScreenShots/kindnessfragmentSS.jpeg"  width="250px" height="530px"> 
-  <img align="center" src="https://github.com/Ziyadxan06/SwitchProject/blob/master/ScreenShots/optimismfragmentSS.jpeg"  width="250px" height="530px">
+  <img align="center" src="https://github.com/Ziyadxan06/SwitchesApp/blob/master/ScreenShots/sacrificeSS.jpeg" width="250px" height="530px">
+  <img align="center" src="https://github.com/Ziyadxan06/SwitchesApp/blob/master/ScreenShots/christmasSS.jpeg"  width="250px" height="530px">
+  <img align="center" src="https://github.com/Ziyadxan06/SwitchesApp/blob/master/ScreenShots/novruzSS.jpeg"  width="250px" height="530px">
+  <img align="center" src="https://github.com/Ziyadxan06/SwitchesApp/blob/master/ScreenShots/ramadanSS.jpeg"  width="250px" height="530px"> 
+  <img align="center" src="https://github.com/Ziyadxan06/SwitchesApp/blob/master/ScreenShots/haloweenSS.jpeg"  width="250px" height="530px">
 </p> 
 
 <br><br>
