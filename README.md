@@ -26,8 +26,8 @@
 <h4 aling="left">
   Behavior of Switches on App Launch: <br> <br>
   - Upon launching the app, you will see 6 switches. <br>
-  - The "Ego" switch is initially checked, when "Ego" switch is checked the other switches become disabled and unchecked. <br>
-  - When the "Ego" switch is unchecked, the other switches become enabled. <br>
+  - The "Work" switch is initially checked, when "Work" switch is checked the other switches become disabled and unchecked. <br>
+  - When the "Work" switch is unchecked, the other switches become enabled. <br>
   - When other switches are checked, a corresponding destination is added to the bottom navigation bar.<br>
   - When other switches are unchecked, a corresponding destination is removed from the bottom navigation bar <br>
   - When four switches are checked, the fifth switch will not add a new destination to the bottom navigation bar when it is checked. <br>
