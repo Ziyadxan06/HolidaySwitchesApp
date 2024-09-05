@@ -18,8 +18,8 @@
 </h2>
 
 <p align="center">
-  <img align="center" src="https://github.com/Ziyadxan06/SwitchesApp/blob/master/ScreenShots/homescreenSS.jpeg" width="250px" height="530px">
-  <img align="center" src="https://github.com/Ziyadxan06/SwitchesApp/blob/master/ScreenShots/homescreenSS2.jpeg"  width="250px" height="530px">
+  <img align="center" src="https://github.com/Ziyadxan06/SwitchesApp/blob/master/ScreenShots/homescreenSS2.jpeg" width="250px" height="530px">
+  <img align="center" src="https://github.com/Ziyadxan06/SwitchesApp/blob/master/ScreenShots/homescreenSS.jpeg"  width="250px" height="530px">
   <img align="center" src="https://github.com/Ziyadxan06/SwitchesApp/blob/master/ScreenShots/homescreenSS3.jpeg"  width="250px" height="530px">
 </p> 
 <br>
