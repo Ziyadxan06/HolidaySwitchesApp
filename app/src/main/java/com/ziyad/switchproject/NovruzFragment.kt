@@ -9,7 +9,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
 @AndroidEntryPoint
-class OptimismFragment : Fragment() {
+class NovruzFragment : Fragment() {
 
     @Inject
     lateinit var destinationTextProvider: DestinationTextProvider
@@ -22,12 +22,12 @@ class OptimismFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_optimism, container, false)
+        return inflater.inflate(R.layout.fragment_novruz, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        destinationTextAnimations.animateHaloweenText(view, destinationTextProvider.haloweenText)
+        destinationTextAnimations.animateNovruzText(view, destinationTextProvider.novruzText)
     }
 }

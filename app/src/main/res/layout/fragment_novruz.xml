@@ -1,28 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".OptimismFragment"
+    tools:context=".NovruzFragment"
+    android:background="#77D403"
     android:orientation="vertical"
-    android:background="#240907"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <pl.droidsonroids.gif.GifImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/gif_haloween"
+        android:src="@drawable/gif_novruz"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"/>
 
     <TextView
-        android:id="@+id/haloweenFragmentText"
+        android:id="@+id/novruzFragmentText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
         android:text=""
         android:textSize="20sp"
-        android:background="#AB3D02"
-        android:fontFamily="sans-serif-light"
-        android:textColor="#701A01" />
+        android:background="#8BC34A"
+        android:fontFamily="sans-serif-smallcaps"/>
 
 </LinearLayout>

@@ -1,5 +1,6 @@
 package com.ziyad.switchproject
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -9,7 +10,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
 @AndroidEntryPoint
-class HappinessFragment : Fragment() {
+class RamadanFragment : Fragment() {
 
     @Inject
     lateinit var destinationTextProvider: DestinationTextProvider
@@ -17,17 +18,19 @@ class HappinessFragment : Fragment() {
     @Inject
     lateinit var destinationTextAnimations: DestinationTextAnimations
 
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_happiness, container, false)
+        return inflater.inflate(R.layout.fragment_ramadan, container, false)
     }
 
+    @SuppressLint("ResourceAsColor")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        destinationTextAnimations.animateNovruzText(view, destinationTextProvider.novruzText)
+        destinationTextAnimations.animateRamadanText(view, destinationTextProvider.ramadanText)
     }
 }

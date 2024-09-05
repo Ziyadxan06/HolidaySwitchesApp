@@ -31,11 +31,11 @@ class MainActivity : AppCompatActivity() {
         val appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.homeFragment,
-                R.id.givingFragment,
-                R.id.respectFragment,
-                R.id.happinessFragment,
-                R.id.kindnessFragment,
-                R.id.optimismFragment
+                R.id.sacrificeFragment,
+                R.id.christmasFragment,
+                R.id.novruzFragment,
+                R.id.ramadanFragment,
+                R.id.haloweenFragment
             )
         )
 

@@ -101,7 +101,7 @@ class EventHandler(val view : View, val bottomNav : BottomNavigationView) : Life
         when (activeSwitches.last()) {
             R.id.eidaladhaSwitchCompat -> bottomNav.menu.add(
                 Menu.NONE,
-                R.id.givingFragment,
+                R.id.sacrificeFragment,
                 Menu.NONE,
                 "Eid al-Adha"
             )
@@ -109,7 +109,7 @@ class EventHandler(val view : View, val bottomNav : BottomNavigationView) : Life
 
             R.id.christmasSwitchCompat -> bottomNav.menu.add(
                 Menu.NONE,
-                R.id.respectFragment,
+                R.id.christmasFragment,
                 Menu.NONE,
                 "Christmas"
             )
@@ -117,7 +117,7 @@ class EventHandler(val view : View, val bottomNav : BottomNavigationView) : Life
 
             R.id.novruzSwitchCompat -> bottomNav.menu.add(
                 Menu.NONE,
-                R.id.happinessFragment,
+                R.id.novruzFragment,
                 Menu.NONE,
                 "Novruz"
             )
@@ -125,7 +125,7 @@ class EventHandler(val view : View, val bottomNav : BottomNavigationView) : Life
 
             R.id.ramadanSwitchCompat -> bottomNav.menu.add(
                 Menu.NONE,
-                R.id.kindnessFragment,
+                R.id.ramadanFragment,
                 Menu.NONE,
                 "Ramadan"
             )
@@ -133,7 +133,7 @@ class EventHandler(val view : View, val bottomNav : BottomNavigationView) : Life
 
             R.id.haloweenSwitchCompat -> bottomNav.menu.add(
                 Menu.NONE,
-                R.id.optimismFragment,
+                R.id.haloweenFragment,
                 Menu.NONE,
                 "Haloween"
             )
@@ -143,21 +143,21 @@ class EventHandler(val view : View, val bottomNav : BottomNavigationView) : Life
 
     fun removeDestinationFromBottomNav(view: View) {
         when (view.id) {
-            R.id.eidaladhaSwitchCompat -> bottomNav.menu.removeItem(R.id.givingFragment)
-            R.id.christmasSwitchCompat -> bottomNav.menu.removeItem(R.id.respectFragment)
-            R.id.novruzSwitchCompat -> bottomNav.menu.removeItem(R.id.happinessFragment)
-            R.id.ramadanSwitchCompat -> bottomNav.menu.removeItem(R.id.kindnessFragment)
-            R.id.haloweenSwitchCompat -> bottomNav.menu.removeItem(R.id.optimismFragment)
+            R.id.eidaladhaSwitchCompat -> bottomNav.menu.removeItem(R.id.sacrificeFragment)
+            R.id.christmasSwitchCompat -> bottomNav.menu.removeItem(R.id.christmasFragment)
+            R.id.novruzSwitchCompat -> bottomNav.menu.removeItem(R.id.novruzFragment)
+            R.id.ramadanSwitchCompat -> bottomNav.menu.removeItem(R.id.ramadanFragment)
+            R.id.haloweenSwitchCompat -> bottomNav.menu.removeItem(R.id.haloweenFragment)
         }
     }
 
     fun removeAllDestinations(index: Int) {
         when (index) {
-            0 -> bottomNav.menu.removeItem(R.id.givingFragment)
-            1 -> bottomNav.menu.removeItem(R.id.respectFragment)
-            2 -> bottomNav.menu.removeItem(R.id.happinessFragment)
-            3 -> bottomNav.menu.removeItem(R.id.kindnessFragment)
-            4 -> bottomNav.menu.removeItem(R.id.optimismFragment)
+            0 -> bottomNav.menu.removeItem(R.id.sacrificeFragment)
+            1 -> bottomNav.menu.removeItem(R.id.christmasFragment)
+            2 -> bottomNav.menu.removeItem(R.id.novruzFragment)
+            3 -> bottomNav.menu.removeItem(R.id.ramadanFragment)
+            4 -> bottomNav.menu.removeItem(R.id.haloweenFragment)
         }
     }
 

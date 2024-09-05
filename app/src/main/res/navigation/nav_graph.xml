@@ -10,28 +10,28 @@
         android:name="com.ziyad.switchproject.HomeFragment"
         android:label="HomeFragment" />
     <fragment
-        android:id="@+id/givingFragment"
-        android:name="com.ziyad.switchproject.GivingFragment"
+        android:id="@+id/sacrificeFragment"
+        android:name="com.ziyad.switchproject.SacrificeFragment"
         android:label="fragment_first_switch"
-        tools:layout="@layout/fragment_giving" />
+        tools:layout="@layout/fragment_sacrifice" />
     <fragment
-        android:id="@+id/respectFragment"
-        android:name="com.ziyad.switchproject.RespectFragment"
+        android:id="@+id/christmasFragment"
+        android:name="com.ziyad.switchproject.ChristmasFragment"
         android:label="fragment_second_switch"
-        tools:layout="@layout/fragment_respect" />
+        tools:layout="@layout/fragment_christmas" />
     <fragment
-        android:id="@+id/happinessFragment"
-        android:name="com.ziyad.switchproject.HappinessFragment"
+        android:id="@+id/novruzFragment"
+        android:name="com.ziyad.switchproject.NovruzFragment"
         android:label="fragment_third_switch"
-        tools:layout="@layout/fragment_happiness" />
+        tools:layout="@layout/fragment_novruz" />
     <fragment
-        android:id="@+id/kindnessFragment"
-        android:name="com.ziyad.switchproject.KindnessFragment"
+        android:id="@+id/ramadanFragment"
+        android:name="com.ziyad.switchproject.RamadanFragment"
         android:label="fragment_fourth_switch"
-        tools:layout="@layout/fragment_kindness" />
+        tools:layout="@layout/fragment_ramadan" />
     <fragment
-        android:id="@+id/optimismFragment"
-        android:name="com.ziyad.switchproject.OptimismFragment"
+        android:id="@+id/haloweenFragment"
+        android:name="com.ziyad.switchproject.HaloweenFragment"
         android:label="fragment_fifth_switch"
-        tools:layout="@layout/fragment_optimism" />
+        tools:layout="@layout/fragment_haloween" />
 </navigation>
