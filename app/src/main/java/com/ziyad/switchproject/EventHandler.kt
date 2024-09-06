@@ -19,7 +19,7 @@ class EventHandler(val view : View, val bottomNav : BottomNavigationView) : Life
     override fun onStateChanged(source: LifecycleOwner, event: Lifecycle.Event) {
         when (event) {
             Lifecycle.Event.ON_START -> addCheckedSwitch()
-            Lifecycle.Event.ON_RESUME -> makeEgoChecked()
+            Lifecycle.Event.ON_RESUME -> makeWorkChecked()
             else -> {}
         }
     }
@@ -35,7 +35,7 @@ class EventHandler(val view : View, val bottomNav : BottomNavigationView) : Life
     var switches: List<SwitchCompat> =
         listOf(SwSacrifice, SwChristmas, SwHaloween, SwRamadan, SwNovruz)
 
-    fun makeEgoChecked() {
+    fun makeWorkChecked() {
         if (activeSwitches.isEmpty()) {
             SwWork.isChecked = true
             disableAndCloseOtherSwitches()
@@ -51,7 +51,7 @@ class EventHandler(val view : View, val bottomNav : BottomNavigationView) : Life
         }
     }
 
-    fun OnClickEgo() {
+    fun OnClickWork() {
         if (SwWork.isChecked) {
             disableAndCloseOtherSwitches()
             bottomNav.visibility = View.GONE

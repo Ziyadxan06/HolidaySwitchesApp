@@ -121,7 +121,7 @@
             app:switchPadding="10dp"
             android:thumb="@drawable/thumb_layout"
             app:track="@drawable/track_layout"
-            android:onClick="@{() -> handler.OnClickEgo()}"
+            android:onClick="@{() -> handler.OnClickWork()}"
             android:scaleX="1.5"
             android:scaleY="1.5"
             android:text="Work"
