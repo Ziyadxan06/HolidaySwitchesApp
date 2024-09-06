@@ -14,36 +14,38 @@ import kotlinx.coroutines.runBlocking
 
 class EventHandler(val view : View, val bottomNav : BottomNavigationView) : LifecycleEventObserver {
 
-    var activeSwitches : MutableList<Int> = mutableListOf()
+    var activeSwitches: MutableList<Int> = mutableListOf()
 
     override fun onStateChanged(source: LifecycleOwner, event: Lifecycle.Event) {
-        when(event){
+        when (event) {
             Lifecycle.Event.ON_START -> addCheckedSwitch()
             Lifecycle.Event.ON_RESUME -> makeEgoChecked()
             else -> {}
         }
     }
 
+
+
     var SwWork: SwitchCompat = view.findViewById(R.id.workSwitch)
     var SwSacrifice: SwitchCompat = view.findViewById(R.id.eidaladhaSwitchCompat)
     var SwChristmas: SwitchCompat = view.findViewById(R.id.christmasSwitchCompat)
-    var SwNovruz: SwitchCompat = view.findViewById(R.id.novruzSwitchCompat)
-    var SwRamadan: SwitchCompat = view.findViewById(R.id.ramadanSwitchCompat)
     var SwHaloween: SwitchCompat = view.findViewById(R.id.haloweenSwitchCompat)
-    var switches: List<SwitchCompat> = listOf( SwSacrifice, SwChristmas, SwNovruz, SwRamadan, SwHaloween)
+    var SwRamadan: SwitchCompat = view.findViewById(R.id.ramadanSwitchCompat)
+    var SwNovruz: SwitchCompat = view.findViewById(R.id.novruzSwitchCompat)
+    var switches: List<SwitchCompat> =
+        listOf(SwSacrifice, SwChristmas, SwHaloween, SwRamadan, SwNovruz)
 
-
-    fun makeEgoChecked(){
-        if(activeSwitches.isEmpty()){
+    fun makeEgoChecked() {
+        if (activeSwitches.isEmpty()) {
             SwWork.isChecked = true
             disableAndCloseOtherSwitches()
             bottomNav.visibility = View.GONE
         }
     }
 
-    fun addCheckedSwitch(){
+    fun addCheckedSwitch() {
         switches.forEach { switchCompat ->
-            if(switchCompat.isChecked && activeSwitches.size < 4){
+            if (switchCompat.isChecked && activeSwitches.size < 4) {
                 activeSwitches.add(switchCompat.id)
             }
         }
@@ -92,7 +94,9 @@ class EventHandler(val view : View, val bottomNav : BottomNavigationView) : Life
             } else if (!switch.isChecked && view.id == switch.id && activeSwitches.contains(view.id)) {
                 activeSwitches.remove(switch.id)
                 removeDestinationFromBottomNav(view)
-                autoReplace()
+            }else if(bottomNav.menu.size() == 5 && view.id == switch.id && !activeSwitches.contains(switch.id) && switch.isChecked ){
+                switch.isChecked = false
+                Toast.makeText(view.context, "You can't add 6 items to bottom navbar", Toast.LENGTH_SHORT).show()
             }
         }
     }
@@ -115,13 +119,13 @@ class EventHandler(val view : View, val bottomNav : BottomNavigationView) : Life
             )
                 .setIcon(R.drawable.ic_xmas)
 
-            R.id.novruzSwitchCompat -> bottomNav.menu.add(
+            R.id.haloweenSwitchCompat -> bottomNav.menu.add(
                 Menu.NONE,
-                R.id.novruzFragment,
+                R.id.haloweenFragment,
                 Menu.NONE,
-                "Novruz"
+                "Haloween"
             )
-                .setIcon(R.drawable.ic_novruz)
+                .setIcon(R.drawable.ic_haloween)
 
             R.id.ramadanSwitchCompat -> bottomNav.menu.add(
                 Menu.NONE,
@@ -131,13 +135,13 @@ class EventHandler(val view : View, val bottomNav : BottomNavigationView) : Life
             )
                 .setIcon(R.drawable.ic_ramadan)
 
-            R.id.haloweenSwitchCompat -> bottomNav.menu.add(
+            R.id.novruzSwitchCompat -> bottomNav.menu.add(
                 Menu.NONE,
-                R.id.haloweenFragment,
+                R.id.novruzFragment,
                 Menu.NONE,
-                "Haloween"
+                "Novruz"
             )
-                .setIcon(R.drawable.ic_haloween)
+                .setIcon(R.drawable.ic_novruz)
         }
     }
 
@@ -155,19 +159,10 @@ class EventHandler(val view : View, val bottomNav : BottomNavigationView) : Life
         when (index) {
             0 -> bottomNav.menu.removeItem(R.id.sacrificeFragment)
             1 -> bottomNav.menu.removeItem(R.id.christmasFragment)
-            2 -> bottomNav.menu.removeItem(R.id.novruzFragment)
+            2 -> bottomNav.menu.removeItem(R.id.haloweenFragment)
             3 -> bottomNav.menu.removeItem(R.id.ramadanFragment)
-            4 -> bottomNav.menu.removeItem(R.id.haloweenFragment)
-        }
-    }
+            4 -> bottomNav.menu.removeItem(R.id.novruzFragment)
 
-    fun autoReplace(){
-        switches.forEach{ switch ->
-            if(switch.isChecked && !activeSwitches.contains(switch.id) && activeSwitches.size < 4){
-                activeSwitches.add(switch.id)
-                addDestinationToBottomNav(activeSwitches)
-                Toast.makeText(view.context, "${switch.text} switch item added to bottom nav", Toast.LENGTH_SHORT).show()
-            }
         }
     }
 }
